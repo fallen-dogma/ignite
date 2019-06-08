@@ -11,5 +11,5 @@ function createRequestTypes(base, types = defaultTypes) {
 
 export const APP = createRequestTypes('APP', [
 	'SHOW_ABOUT_DIALOG',
-	'HIDE_ABOUT_PANEL'
+	'HIDE_ABOUT_DIALOG'
 ]);

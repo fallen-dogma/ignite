@@ -55,7 +55,7 @@ const DialogActions = withStyles(theme => ({
   open: state.App.isAboutDialogShown
 }), dispatch => ({
   showAboutDialog: () => dispatch(AppActions.showAboutDialog()),
-  hideActionDialog: () => dispatch(AppActions.hideAboutDialog())
+  hideAboutDialog: () => dispatch(AppActions.hideAboutDialog())
 }))
 
 class CustomizedDialogs extends React.Component {
@@ -70,7 +70,7 @@ class CustomizedDialogs extends React.Component {
 
   handleClose = () => {
     const { hideAboutDialog } = this.props;
-    hideAboutDialog(0);
+    hideAboutDialog();
   };
 
   render() {

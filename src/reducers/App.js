@@ -10,7 +10,7 @@ export default function App(state = initialState, action) {
 			return {
 				isAboutDialogShown: true
 			};
-		case types.APP.HIDE_ABOUT_PANEL:
+		case types.APP.HIDE_ABOUT_DIALOG:
 			return {
 				isAboutDialogShown: false
 			};
