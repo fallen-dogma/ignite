@@ -22,7 +22,7 @@ function App() {
 }
 
 const AppContainer = styled.div`
-
+  background: black;
 `;
 
 export default App;
