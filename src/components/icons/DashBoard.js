@@ -6,7 +6,7 @@ import styled from 'styled-components';
 function DashBoardIcon(props) {
 
 	return (
-		<IconButton onClick={props.onClick}>
+		<IconButton onClick={props.onClick} style={style}>
 			<SvgIcon>
 				<SVGContainer>
 					<path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
@@ -19,5 +19,10 @@ function DashBoardIcon(props) {
 const SVGContainer = styled.svg`
 	fill: #757575;
 `;
+
+const style ={
+	padding: 13,
+	marginRight: '6px'
+}
 
 export default DashBoardIcon;
