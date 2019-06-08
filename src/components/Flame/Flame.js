@@ -44,7 +44,7 @@ const FlameContainer = styled.div`
     position: absolute;
     :hover {
         cursor: pointer;
-		animation: flicker 1.5s ease-in infinite;
+		animation: flicker .5s ease-in infinite;
 	};
 `;
 
