@@ -21,14 +21,16 @@ import { mainListItems, secondaryListItems } from './listItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
+import styled from 'styled-components';
+import { default as AppConfig } from '../../constants/App';
 
 function MadeWithLove() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Built with love by the '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Material-UI
-      </Link>
+      <BlueLink color="inherit" href={ AppConfig.TEAM_ORG_LINK }>
+        { AppConfig.TEAM_NAME }
+      </BlueLink>
       {' team.'}
     </Typography>
   );
@@ -114,6 +116,10 @@ const useStyles = makeStyles(theme => ({
     height: 240,
   },
 }));
+
+const BlueLink = styled.a`
+  color: #03A9F4;
+`;
 
 export default function Dashboard() {
   const classes = useStyles();
