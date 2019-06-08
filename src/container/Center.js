@@ -1,13 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import FlameNode from './FlameNode';
+import Flame from '../components/Flame/Flame';
+import mockData from '../data/graph';
 
 class Center extends React.Component {
+
 	render() {
 		return (
 			<CenterContainer>
-				<FlameNode />
+				<Flame nodeData={mockData[0]} />
 			</CenterContainer>
 		);
 	}
