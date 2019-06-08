@@ -22,6 +22,7 @@ import Deposits from './Deposits';
 import Orders from './Orders';
 import styled from 'styled-components';
 import { default as AppConfig } from '../../constants/App';
+import GitHubIcon from '../../components/icons/GithubIcon';
 
 function MadeWithLove() {
   return (
@@ -148,11 +149,7 @@ export default function Dashboard() {
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             { AppConfig.PROJECT_NAME }
           </Typography>
-          <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
+          <GitHubIcon />
         </Toolbar>
       </AppBar>
       <Drawer
