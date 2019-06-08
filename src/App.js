@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import AppBar from './container/AppBar';
 import Graph from './container/Graph';
-import data from './data/blocks.json';
+import data from './data/graph.json';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
 const AppContainer = styled.div`
   width: 100vw;
   height: 100vh;
-  background: #333333;
+  background: #E5E5E5;
 `;
 
 export default App;
