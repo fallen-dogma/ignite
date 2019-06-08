@@ -5,3 +5,7 @@ body {
 .__react_component_tooltip {
 	white-space: nowrap;
 }
+
+.graph-nav-info {
+	display: none;
+}

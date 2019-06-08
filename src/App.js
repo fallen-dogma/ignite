@@ -2,13 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 import AppBar from './container/AppBar';
-import Center from './container/Center';
+import Graph from './container/Graph';
+import data from './data/blocks.json';
 
 function App() {
   return (
     <AppContainer>
       <AppBar />
-      <Center />
+      <Graph data={data} />
     </AppContainer>
   );
 }
