@@ -24,7 +24,7 @@ class Flame extends React.Component {
 
     render() {
         const { nodeData } = this.props;
-        const { title } = nodeData;
+        const { title, count } = nodeData;
 
         return (
                 <FlameContainer className='flame-wrapper' data-tip={title}>
@@ -32,8 +32,8 @@ class Flame extends React.Component {
                     <div className='flame orange'></div>
                     <div className='flame gold'></div>
                     <div className='flame white' style={this.renderIcon()}></div>
-                    <p>xs</p>
                     <ReactTooltip place='right' type='light' offset={{top: 10, right: 30 }} />
+                    <VisitedTimes>最近访问 {count} 次</VisitedTimes>
                 </FlameContainer>
         );
     }
@@ -44,7 +44,19 @@ const FlameContainer = styled.div`
     :hover {
         cursor: pointer;
 		animation: flicker .5s ease-in infinite;
-	};
+    };
+`;
+
+const VisitedTimes = styled.div`
+    font-size: 14px;
+    color: #666666;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    white-space: nowrap;
+    :hover {
+        color: white;
+    }
 `;
 
 export default Flame;
