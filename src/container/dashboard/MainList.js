@@ -39,9 +39,9 @@ class MainList extends React.Component {
             <ExportImportIcon />
             <ListItemText primary="导入/导出" />
           </ListItem>
-          <ListItem button>
+          <ListItem button onClick={this.onClickAboutButton}>
             <AboutIcon />
-            <ListItemText primary="关于项目" onClick={this.onClickAboutButton}/>
+            <ListItemText primary="关于项目" />
           </ListItem>
         </List>
       </div>
