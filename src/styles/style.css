@@ -9,3 +9,7 @@ body {
 .graph-nav-info {
 	display: none;
 }
+
+.MuiAppBar-colorPrimary {
+	background: #2196F3!important;
+}
