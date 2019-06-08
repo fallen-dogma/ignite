@@ -22,7 +22,6 @@ const FlameContainer = styled.div`
     display: inline-block;
     height: 24px;
     width: 24px;
-    cursor: pointer;
     animation: flicker .5s ease-in infinite;
 `;
 
