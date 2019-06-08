@@ -42,10 +42,6 @@ class FocusGraph extends React.Component {
 	  ctx.fillStyle = 'red';
 	  ctx.fill();
 	};
-
-	
-	componentDidMount() {
-      }
 	  
 	render() {
 	  const { data, highlightNodes, highlightLink } = this.state;

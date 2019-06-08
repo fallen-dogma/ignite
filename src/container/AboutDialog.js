@@ -78,9 +78,6 @@ class CustomizedDialogs extends React.Component {
     const { open } = this.props;
     return (
       <div>
-        <Button variant="outlined" color="secondary" onClick={this.handleClickOpen}>
-          Open dialog
-        </Button>
         <Dialog
           onClose={this.handleClose}
           aria-labelledby="customized-dialog-title"
