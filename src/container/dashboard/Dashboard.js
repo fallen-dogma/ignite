@@ -5,7 +5,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
@@ -21,7 +20,7 @@ import styled from 'styled-components';
 import { default as AppConfig } from '../../constants/App';
 import GitHubIcon from '../../components/icons/GithubIcon';
 import Flame from '../../components/Flame/Flame';
-import { mainListItems } from './listItems';
+import MainList from './MainList';
 
 function MadeWithLove() {
   return (
@@ -165,7 +164,7 @@ export default function Dashboard() {
           </IconButton>
         </div>
         <Divider />
-        <List>{mainListItems}</List>
+        <MainList />
       </Drawer>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
