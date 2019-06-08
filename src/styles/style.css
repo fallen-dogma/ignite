@@ -1,3 +1,7 @@
 body {
 	margin: 0;
 }
+
+.__react_component_tooltip {
+	white-space: nowrap;
+}

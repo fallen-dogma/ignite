@@ -27,15 +27,14 @@ class Flame extends React.Component {
         const { title } = nodeData;
 
         return (
-            <div className='wrapper'>
                 <FlameContainer className='flame-wrapper' data-tip={title}>
                     <div className='flame red' ></div>
                     <div className='flame orange'></div>
                     <div className='flame gold'></div>
                     <div className='flame white' style={this.renderIcon()}></div>
+                    <p>xs</p>
+                    <ReactTooltip place='right' type='light' offset={{top: 10, right: 30 }} />
                 </FlameContainer>
-                <ReactTooltip place='right' type='light' offset={{top: 10, right: 30 }} />
-            </div>
         );
     }
 }

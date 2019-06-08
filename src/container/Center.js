@@ -16,7 +16,10 @@ class Center extends React.Component {
 }
 
 const CenterContainer = styled.div`
-	position: absolute;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
