@@ -149,7 +149,7 @@ export default function Dashboard() {
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             { AppConfig.PROJECT_NAME }
           </Typography>
-          <GitHubIcon />
+          <GitHubIcon onClick={() => {window.location='https://github.com/fallen-dogma/ignite'}}/>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -166,8 +166,6 @@ export default function Dashboard() {
         </div>
         <Divider />
         <List>{mainListItems}</List>
-        <Divider />
-        <List>{secondaryListItems}</List>
       </Drawer>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
