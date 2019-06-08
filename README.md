@@ -66,3 +66,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+一、主要思路
+    主题为“野火”，来体现互联网如野火般飞速传播的特性
+二、设计目标
+以野火的形式展现信息之间的联系性
+三、任务分段
+1、制作成浏览器插件的形式，从用户浏览历史中统计浏览数据，展现在插件中；
+2、将数据整合嵌入到新标签页中，并指示出用户的浏览路径
+3、在新标签页上以火焰动效的形式展现用户得浏览路径，用火线点燃另一个火炬指代从之前打开的页面中再打开一个页面。火焰由下到上，页面背景主题由上到下。
