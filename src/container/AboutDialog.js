@@ -8,6 +8,8 @@ import MuiDialogActions from '@material-ui/core/DialogActions';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
+import { connect } from 'react-redux';
+import * as AppActions from '../actions/App';
 
 const styles = theme => ({
   root: {
@@ -49,22 +51,30 @@ const DialogActions = withStyles(theme => ({
   },
 }))(MuiDialogActions);
 
+@connect(state => ({
+  open: state.App.isAboutDialogShown
+}), dispatch => ({
+  showAboutDialog: () => dispatch(AppActions.showAboutDialog()),
+  hideActionDialog: () => dispatch(AppActions.hideAboutDialog())
+}))
+
 class CustomizedDialogs extends React.Component {
   state = {
     open: false,
   };
 
   handleClickOpen = () => {
-    this.setState({
-      open: true,
-    });
+    const { showAboutDialog } = this.props;
+    showAboutDialog();
   };
 
   handleClose = () => {
-    this.setState({ open: false });
+    const { hideAboutDialog } = this.props;
+    hideAboutDialog(0);
   };
 
   render() {
+    const { open } = this.props;
     return (
       <div>
         <Button variant="outlined" color="secondary" onClick={this.handleClickOpen}>
@@ -73,7 +83,7 @@ class CustomizedDialogs extends React.Component {
         <Dialog
           onClose={this.handleClose}
           aria-labelledby="customized-dialog-title"
-          open={this.state.open}
+          open={open}
         >
           <DialogTitle id="customized-dialog-title" onClose={this.handleClose}>
             Modal title

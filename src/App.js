@@ -2,13 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Dashboard from './container/dashboard/Dashboard';
+import AboutDialog from './container/AboutDialog';
 
-function App() {
-  return (
-    <AppContainer>
-      <Dashboard />
-    </AppContainer>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <AppContainer>
+        <Dashboard />
+        <AboutDialog />
+      </AppContainer>
+    );
+  }
 }
 
 const AppContainer = styled.div`
