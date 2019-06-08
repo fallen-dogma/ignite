@@ -1129,6 +1129,13 @@
     react-transition-group "^4.0.0"
     warning "^4.0.1"
 
+"@material-ui/icons@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.npm.taobao.org/@material-ui/icons/download/@material-ui/icons-4.0.1.tgz#f63990f731c6206c82023c96d510bd7bdda44250"
+  integrity sha1-9jmQ9zHGIGyCAjyW1RC9e92kQlA=
+  dependencies:
+    "@babel/runtime" "^7.2.0"
+
 "@material-ui/styles@^4.0.2":
   version "4.0.2"
   resolved "https://registry.npm.taobao.org/@material-ui/styles/download/@material-ui/styles-4.0.2.tgz#05805b26bfcd876f883b098e4be50d813b1c5fde"
