@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import AppBar from './container/AppBar';
 import Center from './container/Center';
 
 function App() {
   return (
     <AppContainer>
+      <AppBar />
       <Center />
     </AppContainer>
   );

@@ -8,10 +8,10 @@ class Flame extends React.Component {
         return (
             <div class="wrapper">
                 <FlameContainer className='flame-wrapper'>
-                    <div class="flame red"></div>
-                    <div class="flame orange"></div>
-                    <div class="flame gold"></div>
-                    <div class="flame white"></div>
+                    <div className='flame red'></div>
+                    <div className='flame orange'></div>
+                    <div className='flame gold'></div>
+                    <div className='flame white'></div>
                 </FlameContainer>
             </div>
         );
