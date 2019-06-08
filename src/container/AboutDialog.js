@@ -10,6 +10,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
 import { connect } from 'react-redux';
 import * as AppActions from '../actions/App';
+import BlueLink from '../components/BlueLink';
 
 const styles = theme => ({
   root: {
@@ -86,7 +87,7 @@ class CustomizedDialogs extends React.Component {
           open={open}
         >
           <DialogTitle id="customized-dialog-title" onClose={this.handleClose}>
-            Modal title
+            Ignite Your Browsing History :)
           </DialogTitle>
           <DialogContent dividers>
             <Typography gutterBottom>
@@ -106,7 +107,7 @@ class CustomizedDialogs extends React.Component {
           </DialogContent>
           <DialogActions>
             <Button onClick={this.handleClose} color="primary">
-              Save changes
+              我知道了
             </Button>
           </DialogActions>
         </Dialog>
