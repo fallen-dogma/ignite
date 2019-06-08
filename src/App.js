@@ -2,14 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 import AppBar from './container/AppBar';
-import Graph from './container/Graph';
-import data from './data/graph.json';
+import Dashboard from './container/dashboard/Dashboard';
 
 function App() {
   return (
     <AppContainer>
-      <AppBar />
-      <Graph data={data} />
+      <Dashboard />
     </AppContainer>
   );
 }
