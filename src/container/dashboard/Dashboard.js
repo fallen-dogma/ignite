@@ -13,7 +13,6 @@ import Badge from '@material-ui/core/Badge';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
@@ -27,7 +26,7 @@ import { default as AppConfig } from '../../constants/App';
 function MadeWithLove() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {'Built with love by the '}
+      {'Built with ❤ by the '}
       <BlueLink color="inherit" href={ AppConfig.TEAM_ORG_LINK }>
         { AppConfig.TEAM_NAME }
       </BlueLink>

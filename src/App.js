@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import AppBar from './container/AppBar';
 import Dashboard from './container/dashboard/Dashboard';
 
 function App() {
