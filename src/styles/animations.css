@@ -1,0 +1,8 @@
+@keyframes flicker {
+    0% {transform: rotate(-1deg);}
+    20% {transform: scaleY(1.01);}
+    40% {transform: rotate(-1deg);}
+    60% {transform: rotate(1deg);}
+    80% {transform: scaleY(0.99);}
+    100% {transform: rotate(-1deg);}
+}

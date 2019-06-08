@@ -1,28 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Center from './container/Center';
+
 function App() {
   return (
     <AppContainer>
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Center />
     </AppContainer>
   );
 }
 
 const AppContainer = styled.div`
-  background: black;
+  width: 100vw;
+  height: 100vh;
+  background: #333333;
 `;
 
 export default App;
