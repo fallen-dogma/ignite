@@ -6,7 +6,7 @@ export default {
         }
     },
     legend: {
-        data: ['直接访问', '邮件营销','联盟广告','视频广告','搜索引擎']
+		data: ['百度', '谷歌','知乎','Stack Overflow','GitHub']
     },
     grid: {
         left: '3%',
@@ -15,37 +15,19 @@ export default {
         containLabel: true
     },
     xAxis:  {
-        type: 'value'
+		type: 'value',
+		axisLabel: {
+			show: false
+		}
     },
     yAxis: {
         type: 'category',
-        data: ['使用时间']
+		data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+		axisLabel: {
+			show: false
+		}
     },
     series: [
-        {
-            name: '知乎',
-            type: 'bar',
-            stack: '总量',
-            label: {
-                normal: {
-                    show: true,
-                    position: 'insideRight'
-                }
-            },
-            data: [320]
-        },
-        {
-            name: '豆瓣',
-            type: 'bar',
-            stack: '总量',
-            label: {
-                normal: {
-                    show: true,
-                    position: 'insideRight'
-                }
-            },
-            data: [120]
-        },
         {
             name: '百度',
             type: 'bar',
@@ -56,7 +38,7 @@ export default {
                     position: 'insideRight'
                 }
             },
-            data: [220]
+            data: [320, 22, 567, 238, 90, 400]
         },
         {
             name: '谷歌',
@@ -68,10 +50,10 @@ export default {
                     position: 'insideRight'
                 }
             },
-            data: [150]
+            data: [120, 100, 10, 27, 100, 600, 102]
         },
         {
-            name: '',
+            name: '知乎',
             type: 'bar',
             stack: '总量',
             label: {
@@ -80,7 +62,31 @@ export default {
                     position: 'insideRight'
                 }
             },
-            data: [820]
+            data: [220, 245, 210, 100, 20, 10]
+        },
+        {
+            name: 'Stack Overflow',
+            type: 'bar',
+            stack: '总量',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'insideRight'
+                }
+            },
+            data: [150, 130, 134, 100, 70, 10, 300]
+        },
+        {
+            name: 'GitHub',
+            type: 'bar',
+            stack: '总量',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'insideRight'
+                }
+            },
+            data: [820, 340, 560, 200, 200, 500]
         }
     ]
 };

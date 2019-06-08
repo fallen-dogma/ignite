@@ -13,7 +13,7 @@ export default class Deposits extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Title>访问频率</Title>
+        <Title>最近一周高频访问站点</Title>
         <ReactEcharts
         option={timeChartOption}
         notMerge={true}

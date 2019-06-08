@@ -33,7 +33,7 @@ class MainList extends React.Component {
           </ListItem>
           <ListItem button>
             <HistoryIcon />
-            <ListItemText primary="历史记录" />
+            <ListItemText primary="历史记录" onClick={() => window.location='chrome://history'} />
           </ListItem>
           <ListItem button>
             <ExportImportIcon />

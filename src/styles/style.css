@@ -13,3 +13,11 @@ body {
 .MuiAppBar-colorPrimary {
 	background: #2196F3!important;
 }
+
+.makeStyles-fixedHeight-15 {
+	height: 440px!important;
+}
+
+canvas[data-zr-dom-id="zr_0"] {
+	margin-top: 40px;
+}

@@ -11,16 +11,16 @@ import TableRow from '@material-ui/core/TableRow';
 import Title from './Title';
 
 // Generate Order Data
-function createData(id, date, name, shipTo, paymentMethod, amount) {
-  return { id, date, name, shipTo, paymentMethod, amount };
+function createData(id, date, siteName, description, mark) {
+  return { id, date, siteName, description, mark };
 }
 
 const rows = [
-  createData(0, '16 Mar, 2019', 'Elvis Presley', 'Tupelo, MS', 'VISA ⠀•••• 3719', 312.44),
-  createData(1, '16 Mar, 2019', 'Paul McCartney', 'London, UK', 'VISA ⠀•••• 2574', 866.99),
-  createData(2, '16 Mar, 2019', 'Tom Scholz', 'Boston, MA', 'MC ⠀•••• 1253', 100.81),
-  createData(3, '16 Mar, 2019', 'Michael Jackson', 'Gary, IN', 'AMEX ⠀•••• 2000', 654.39),
-  createData(4, '15 Mar, 2019', 'Bruce Springsteen', 'Long Branch, NJ', 'VISA ⠀•••• 5919', 212.79),
+  createData(0, '2019年6月9日 03:58', 'Elvis Presley', '', 312.44),
+  createData(1, '2019年6月9日 01:20', 'Paul McCartney', 'VISA ⠀•••• 2574', 866.99),
+  createData(2, '2019年6月8日 23:37', 'Tom Scholz', 'MC ⠀•••• 1253', 100.81),
+  createData(3, '2019年6月8日 19:41', 'Michael Jackson', 'AMEX ⠀•••• 2000', 654.39),
+  createData(4, '2019年6月8日 15:04', '百度(https://baidu.com)', 'Canvas中设置图片'),
 ];
 
 const useStyles = makeStyles(theme => ({
@@ -33,34 +33,27 @@ export default function Orders() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Recent Orders</Title>
+      <Title>近期活动</Title>
       <Table size="small">
         <TableHead>
           <TableRow>
-            <TableCell>Date</TableCell>
-            <TableCell>Name</TableCell>
-            <TableCell>Ship To</TableCell>
-            <TableCell>Payment Method</TableCell>
-            <TableCell align="right">Sale Amount</TableCell>
+            <TableCell>日期</TableCell>
+            <TableCell>访问站点</TableCell>
+            <TableCell>活动摘要</TableCell>
+            <TableCell align="right">备注</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map(row => (
             <TableRow key={row.id}>
               <TableCell>{row.date}</TableCell>
-              <TableCell>{row.name}</TableCell>
-              <TableCell>{row.shipTo}</TableCell>
-              <TableCell>{row.paymentMethod}</TableCell>
-              <TableCell align="right">{row.amount}</TableCell>
+              <TableCell>{row.siteName}</TableCell>
+              <TableCell>{row.description}</TableCell>
+              <TableCell align="right">{row.mark}</TableCell>
             </TableRow>
           ))}
         </TableBody>
       </Table>
-      <div className={classes.seeMore}>
-        <Link color="primary" href="javascript:;">
-          See more orders
-        </Link>
-      </div>
     </React.Fragment>
   );
 }

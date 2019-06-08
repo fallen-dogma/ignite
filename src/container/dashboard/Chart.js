@@ -6,7 +6,7 @@ import mockData from '../../data/graph';
 export default function Chart() {
   return (
     <React.Fragment>
-      <Title>最近活动</Title>
+      <Title>我的足迹</Title>
       <BrowsingActivities data={ mockData }/>
     </React.Fragment>
   );
